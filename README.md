@@ -1,4 +1,4 @@
-# OJODEGATO - Backend OCR para Extracción de Información de Dispositivos
+# OJODEFURRO - Backend OCR para Extracción de Información de Dispositivos
 
 ## Descripción General
 OJODEGATO es una aplicación backend basada en FastAPI diseñada para extraer información de dispositivos (como IMEIs y EIDs) a partir de capturas de pantalla de smartphones mediante Reconocimiento Óptico de Caracteres (OCR). Este proyecto utiliza librerías modernas de Python para procesar imágenes y proporcionar datos estructurados a través de una API RESTful.

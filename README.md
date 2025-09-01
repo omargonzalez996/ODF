@@ -1,7 +1,7 @@
 # OJODEFURRO - Backend OCR para Extracción de Información de Dispositivos
 
 ## Descripción General
-OJODEGATO es una aplicación backend basada en FastAPI diseñada para extraer información de dispositivos (como IMEIs y EIDs) a partir de capturas de pantalla de smartphones mediante Reconocimiento Óptico de Caracteres (OCR). Este proyecto utiliza librerías modernas de Python para procesar imágenes y proporcionar datos estructurados a través de una API RESTful.
+ODF es una aplicación backend basada en FastAPI diseñada para extraer información de dispositivos (como IMEIs y EIDs) a partir de capturas de pantalla de smartphones mediante Reconocimiento Óptico de Caracteres (OCR). Este proyecto utiliza librerías modernas de Python para procesar imágenes y proporcionar datos estructurados a través de una API RESTful.
 
 ## Características
 - Extrae números IMEI y EID de capturas de pantalla de dispositivos Android.
@@ -17,8 +17,8 @@ OJODEGATO es una aplicación backend basada en FastAPI diseñada para extraer in
 ## Instalación
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/yourusername/ojodegato.git
-   cd ojodegato
+   git clone https://github.com/yourusername/ODF.git
+   cd ODF
    ```
 2. Crea un entorno virtual y actívalo:
    - En Windows: `venv\Scripts\activate`

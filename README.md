@@ -11,7 +11,7 @@ ODF es una aplicación backend basada en FastAPI diseñada para extraer informac
 - Soporte para almacenamiento local de modelos para evitar descargas en línea.
 
 ## Requisitos
-- Python 3.10 o superior.
+- Python 3.10 o 3.11.
 - pip y virtualenv para la gestión de dependencias.
 
 ## Instalación
@@ -25,7 +25,7 @@ ODF es una aplicación backend basada en FastAPI diseñada para extraer informac
    - En macOS/Linux: `source venv/bin/activate`
 3. Instala las dependencias requeridas:
    ```bash
-   pip install fastapi uvicorn easyocr opencv-python python-multipart numpy<2
+   pip install "numpy<2" "opencv-python<4.8" "opencv-python-headless<4.8" torch torchvision easyocr fastapi "uvicorn[standard]" python-multipart
    ```
 
 ## Uso
@@ -44,7 +44,6 @@ ODF es una aplicación backend basada en FastAPI diseñada para extraer informac
 
 ## Configuración
 - **Almacenamiento de Modelos**: Para evitar problemas de SSL durante la descarga de modelos, descarga manualmente los modelos de EasyOCR y configura el `model_storage_directory` en `main.py` (e.g., `reader = easyocr.Reader(['en', 'es'], model_storage_directory='./models')`).
-- **Corrección de SSL**: Si encuentras errores de certificado, ejecuta `/Applications/Python\ 3.10/Install\ Certificates.command` en macOS o instala `certifi` con `pip install certifi --upgrade`.
 
 ## Endpoints de la API
 - `POST /extract`: Sube una captura de pantalla para extraer información de IMEI y EID.
